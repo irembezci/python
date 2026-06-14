@@ -262,47 +262,21 @@ print(y + 5)   # HATA! TypeError
 
 ---
 
-## Ödev 1: Kullanıcı Sınıfı
+## Ödev 3: Banka Hesabı Sınıfı
 
-**Aşağıdaki isterleri karşılayan bir `User` sınıfı yazın.**
+Bir `BankAccount` sınıfı yazın.
 
-- Kullanıcının adı (`name`) ve yaşı (`age`) olsun
-- `greet()` metodu "Hello, my name is {name}" yazdırsın
-- `is_adult()` metodu yaşı 18'den büyükse `True`, değilse `False` döndürsün
-
-**Beklenen çıktı:**
-
-```python
-user1 = User("Alice", 25)
-user2 = User("Bob", 16)
-
-print(user1.greet())   # Hello, my name is Alice
-print(user2.greet())   # Hello, my name is Bob
-print(user1.is_adult())  # True
-print(user2.is_adult())  # False
-```
-
-## Ödev 2: Hayvan Sınıfı ve Miras Alma
-
-Animal sınıfından miras alan Cat ve Dog sınıflarını yazın.
-
-**Animal sınıfı:**
-- `name` ve `sound` özelliklerine sahip olsun
-- `make_sound()` metodu "X goes Y" yazdırsın (X = name, Y = sound)
-
-**Cat sınıfı:**
-- Animal'dan miras alsın
-- `sound` değeri "meow" olsun
-
-**Dog sınıfı:**
-- Animal'dan miras alsın
-- `sound` değeri "woof" olsun
+- Hesap sahibi (`owner`) ve bakiye (`balance`) özellikleri olsun (balance başlangıçta 0 olsun)
+- `deposit(amount)` metodu para eklesin
+- `withdraw(amount)` metodu para çeksin (bakiye yetersizse "Insufficient funds" yazdırsın)
+- `display_balance()` metodu bakiyeyi göstersin
 
 **Beklenen çıktı:**
 
 ```python
-cat = Cat("Luna")
-dog = Dog("Max")
-
-cat.make_sound()   # Luna goes meow
-dog.make_sound()   # Max goes woof
+account = BankAccount("Ahmet")
+account.deposit(100)
+account.display_balance()   # Balance: 100 TL
+account.withdraw(30)
+account.display_balance()   # Balance: 70 TL
+account.withdraw(100)       # Insufficient funds
