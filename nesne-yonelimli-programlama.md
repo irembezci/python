@@ -13,6 +13,7 @@ class Araba:
 benim_araba = Araba()  # Nesne oluşturma
 ```
 
+
 ## `__init__` Metodu (Yapıcı Metot)
 
 Bir nesne oluşturulduğunda **otomatik olarak çalışan** ilk metottur. Nesnenin ilk değerlerini atamak için kullanılır.
@@ -33,6 +34,7 @@ print(ali.name)  # Çıktı: Ali
 | `ali = User("Ali")` | "Ali" değeri __init__'e gider, self.name = "Ali" olur |
 
 
+
 ## `self` Nedir?
 
 `self`, **o an oluşturulan nesnenin kendisidir**. Her metotun ilk parametresi `self` olmak zorundadır. `self` sayesinde nesnenin özelliklerine ve diğer metotlarına erişebiliriz.
@@ -50,6 +52,7 @@ pisi.seslen()  # Çıktı: Merhaba, ben Pisi
 ```
 
 **Önemli:** `self` parametresini çağırırken asla yazmayız. Python otomatik olarak gönderir.
+
 
 
 ## Özellikler (Attributes) ve Metotlar (Methods)
