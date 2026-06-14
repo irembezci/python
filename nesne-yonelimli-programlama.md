@@ -262,7 +262,7 @@ print(y + 5)   # HATA! TypeError
 
 ---
 
-#Ödev: Kullanıcı Sınıfı
+## Ödev 1: Kullanıcı Sınıfı
 
 **Aşağıdaki isterleri karşılayan bir `User` sınıfı yazın.**
 
@@ -280,3 +280,28 @@ print(user1.greet())   # Hello, my name is Alice
 print(user2.greet())   # Hello, my name is Bob
 print(user1.is_adult())  # True
 print(user2.is_adult())  # False
+
+## Ödev 2: Hayvan Sınıfı ve Miras Alma
+
+Animal sınıfından miras alan Cat ve Dog sınıflarını yazın.
+
+**Animal sınıfı:**
+- `name` ve `sound` özelliklerine sahip olsun
+- `make_sound()` metodu "X goes Y" yazdırsın (X = name, Y = sound)
+
+**Cat sınıfı:**
+- Animal'dan miras alsın
+- `sound` değeri "meow" olsun
+
+**Dog sınıfı:**
+- Animal'dan miras alsın
+- `sound` değeri "woof" olsun
+
+**Beklenen çıktı:**
+
+```python
+cat = Cat("Luna")
+dog = Dog("Max")
+
+cat.make_sound()   # Luna goes meow
+dog.make_sound()   # Max goes woof
