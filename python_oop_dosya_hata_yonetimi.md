@@ -1,10 +1,7 @@
 # Python OOP, Dosya İşlemleri ve Hata Yönetimi
 
----
-
 ## Bölüm 1: Python Nesne Yönelimli Programlama (OOP)
 
----
 
 ### 1.1 Sınıf (Class) ve Nesne (Object) Nedir?
 
@@ -28,7 +25,6 @@ print(type(benim_araba))  # <class '__main__.Araba'>
 
 **Açıklama:** `class Araba:` ile bir şablon oluşturduk. `pass` şimdilik boş olduğunu gösterir. `benim_araba` ve `senin_araba` bu şablondan üretilmiş iki farklı nesnedir.
 
----
 
 ### 1.2 `__init__` Metodu (Yapıcı Metot)
 
@@ -63,7 +59,6 @@ Ayşe
 3. `"Ali"` değerini `name` parametresine gönderir
 4. `self.name = name` ile nesneye kaydeder
 
----
 
 ### 1.3 `self` Nedir?
 
@@ -96,7 +91,6 @@ tekir.seslen()  # Merhaba, ben Tekir
 pisi.seslen()  # ✅ Python self'i otomatik gönderir
 ```
 
----
 
 ### 1.4 Özellikler (Attributes) ve Metotlar (Methods)
 
@@ -130,7 +124,6 @@ ali.not_ekle(90)
 print(f"Not ortalaması: {ali.not_ortalamasi()}")  # 87.5
 ```
 
----
 
 ### 1.5 Varsayılan Parametreler (Default Parameters)
 
@@ -169,7 +162,6 @@ def __init__(self, name, age=0):
 def __init__(self, name="Ali", age):
 ```
 
----
 
 ### 1.6 Bir Metodun Başka Bir Metodu Çağırması
 
@@ -204,7 +196,6 @@ Fark: 7
 
 **Açıklama:** `sonuclari_goster()` metodu, `self.topla()` ve `self.cikar()` diyerek diğer metotları çağırır. Bu sayede kod tekrarı önlenir.
 
----
 
 ### 1.7 Koşullu Mantık ile Metod Yazma (if/elif/else)
 
@@ -261,7 +252,6 @@ print(f"Ayşe: {k2.yas_grubu()}")   # Ayşe: Yetişkin
 print(f"Mehmet: {k3.yas_grubu()}") # Mehmet: Yaşlı
 ```
 
----
 
 ### 1.8 Inheritance (Kalıtım / Miras Alma)
 
@@ -311,7 +301,6 @@ kopek.kuyruk_salla() # Max kuyruk sallıyor (sadece Kopek'e özel)
 - Ortak özellikleri bir kere yazıp her yerde kullanırsın
 - Değişiklik yapmak kolaylaşır (sadece ebeveyn sınıfı değiştirirsin)
 
----
 
 ### 1.9 Modüler Programlama ve `import`
 
@@ -380,7 +369,6 @@ kedi = Kedi("Luna")
 kedi.ses_cikar()  # Luna: Miyav!
 ```
 
----
 
 ### 1.10 `None` Nedir?
 
@@ -447,11 +435,8 @@ y = 0
 print(y + 5)  # ✅ 5
 ```
 
----
 
-## 📚 Bölüm 2: Python Dosya İşlemleri (File Handling)
-
----
+## Bölüm 2: Python Dosya İşlemleri (File Handling)
 
 ### 2.1 Dosya Okuma (`open`, `readlines`, `strip`)
 
@@ -543,8 +528,6 @@ for sehir in satirlar:
 [İzmir]
 ```
 
----
-
 ### 2.2 Dosyaya Yazma (`write`)
 
 **Dosya Modları:**
@@ -621,7 +604,6 @@ Ankara
 İzmir
 ```
 
----
 
 ### 2.3 CSV Dosyası Okuma
 
@@ -687,8 +669,6 @@ Mehmet Çelik: 78 puan
 Zeynep Kaya: 95 puan
 ```
 
----
-
 ### 2.4 CSV Dosyasına Yazma
 
 ```python
@@ -749,11 +729,8 @@ id,isim,puan
 3,Mehmet,78
 ```
 
----
 
 ## Bölüm 3: Python Hata Yönetimi (Exception Handling)
-
----
 
 ### 3.1 `try/except` Yapısı
 
@@ -787,7 +764,6 @@ Hata: Geçersiz sayı formatı!
 Program devam ediyor...
 ```
 
----
 
 ### 3.2 Sık Kullanılan Hata Türleri
 
@@ -841,7 +817,6 @@ except IndexError:
     print("Hata: Liste indeksi sınırların dışında!")
 ```
 
----
 
 ### 3.3 Birden Fazla Hata Türünü Yakalama
 
@@ -878,7 +853,6 @@ def sayi_al():
 sayi_al()
 ```
 
----
 
 ### 3.4 `try/except` ile Normal Akış Karşılaştırması
 
@@ -915,8 +889,6 @@ print("3. Bu satır da çalışıyor!")
 2. Program başarıyla devam ediyor!
 3. Bu satır da çalışıyor!
 ```
-
----
 
 ### 3.5 Pratik Örnek: Tam Fonksiyonlu Hava Durumu Uygulaması
 
@@ -960,9 +932,8 @@ def hava_durumu_goster(dosya_adi):
 hava_durumu_goster('hava.csv')
 ```
 
----
 
-## 📝 Genel Özet: Altın Kurallar
+## Genel Özet: Altın Kurallar
 
 ### OOP İçin:
 - Her metot `self` ile başlar: `def metot(self):`
@@ -983,7 +954,6 @@ hava_durumu_goster('hava.csv')
 - Hata mesajlarını AÇIKLAYICI yaz
 - `try/except` programını DAHA SAĞLAM yapar
 
----
 
 ## Sık Yapılan Hatalar ve Çözümleri
 
