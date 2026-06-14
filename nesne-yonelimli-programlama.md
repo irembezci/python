@@ -260,21 +260,23 @@ y = None
 print(y + 5)   # HATA! TypeError
 ```
 
-## Sık Yapılan Hatalar ve Çözümleri
+---
 
-| Hata Mesajı | Sebebi | Çözümü |
-|-------------|--------|--------|
-| `IndentationError` | Hizalama (boşluk/tab) hatası | Aynı bloktaki satırları aynı hizaya getir (4 boşluk) |
-| `NameError: name 'User' is not defined` | Sınıfı import etmedin | `from user import User` ekle |
-| `TypeError: missing 1 required positional argument` | Parametre eksik gönderdin | Kaç parametre gerekiyorsa hepsini gönder |
-| `AttributeError: object has no attribute 'full_name'` | Metodu tanımlamadın veya yanlış yazdın | Metodu doğru şekilde tanımla |
+#Ödev: Kullanıcı Sınıfı
 
-## Altın Kurallar (Özet)
+**Aşağıdaki isterleri karşılayan bir `User` sınıfı yazın.**
 
-- Her metot `self` ile başlar: `def metot(self):`
-- `__init__` nesne oluşurken OTOMATİK çalışır
-- `self.özellik = değer` ile nesneye özellik eklenir
-- Hizalama çok önemlidir: her blok **4 boşluk** ile girintilenir
-- Miras alma için: `class Child(Parent):`
-- Çocuk sınıfın dosyasında ebeveyni import et: `from parent import Parent`
-- `None` = "henüz değeri yok" (`0` ile karıştırma!)
+- Kullanıcının adı (`name`) ve yaşı (`age`) olsun
+- `greet()` metodu "Hello, my name is {name}" yazdırsın
+- `is_adult()` metodu yaşı 18'den büyükse `True`, değilse `False` döndürsün
+
+**Beklenen çıktı:**
+
+```python
+user1 = User("Alice", 25)
+user2 = User("Bob", 16)
+
+print(user1.greet())   # Hello, my name is Alice
+print(user2.greet())   # Hello, my name is Bob
+print(user1.is_adult())  # True
+print(user2.is_adult())  # False
