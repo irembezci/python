@@ -232,5 +232,4 @@ bolme("a") # Hata: Lütfen sayı giriniz!
 - `try` bloğu mümkün olduğunca **KISA** olmalı (sadece hata olabilecek kodlar)
 - Her hatayı yakalamak için `Exception` kullanabilirsiniz ama **özel hata türlerini tercih edin**
 - Hata mesajlarınız **açıklayıcı** olsun ki kullanıcı ne yapması gerektiğini bilsin
-- `try/except` programınızı yavaşlatmaz, aksine **daha sağlam** yapar
-```
+- `try/except` programınızı yavaşlatmaz aksine **daha sağlam** yapar
