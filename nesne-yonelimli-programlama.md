@@ -13,8 +13,6 @@ class Araba:
 benim_araba = Araba()  # Nesne oluşturma
 ```
 
----
-
 ## `__init__` Metodu (Yapıcı Metot)
 
 Bir nesne oluşturulduğunda **otomatik olarak çalışan** ilk metottur. Nesnenin ilk değerlerini atamak için kullanılır.
@@ -34,7 +32,6 @@ print(ali.name)  # Çıktı: Ali
 | `self.name = name` | Gelen name değerini nesnenin name özelliğine ata |
 | `ali = User("Ali")` | "Ali" değeri __init__'e gider, self.name = "Ali" olur |
 
----
 
 ## `self` Nedir?
 
@@ -54,7 +51,6 @@ pisi.seslen()  # Çıktı: Merhaba, ben Pisi
 
 **Önemli:** `self` parametresini çağırırken asla yazmayız. Python otomatik olarak gönderir.
 
----
 
 ## Özellikler (Attributes) ve Metotlar (Methods)
 
@@ -72,7 +68,6 @@ class Dog:
         print(f"{self.name} says woof!")
 ```
 
----
 
 ## Varsayılan Parametreler (Default Parameters)
 
@@ -88,7 +83,6 @@ snoopy = Dog("Snoopy")        # age = 0 (varsayılan)
 rex = Dog("Rex", 5)           # age = 5
 ```
 
----
 
 ## Bir Metodun Başka Bir Metodu Çağırması
 
@@ -112,7 +106,6 @@ class Dog:
 
 `greet()` metodu, `casual_name()` metodunu çağırır ve dönen değeri kullanır.
 
----
 
 ## Koşullu Mantık ile Metod Yazma (if/elif/else)
 
@@ -139,7 +132,6 @@ class User:
 | `year < 2000` | "20th" döndürür |
 | `year >= 2000` | "21st" döndürür |
 
----
 
 ## Inheritance (Kalıtım / Miras Alma)
 
@@ -176,7 +168,6 @@ luis.greet()     # Çıktı: Hola! - Luis
 
 **Önemli:** Çocuk sınıf, ebeveyn sınıfın metodlarını **ezebilir (override)**. Yukarıdaki örnekte `greet()` metodu her çocuk sınıfta yeniden yazılmıştır.
 
----
 
 ## Modüler Programlama ve `import`
 
@@ -227,7 +218,6 @@ class FrenchUser(User):
     pass
 ```
 
----
 
 ## Colab'de `%%writefile` ile Dosya Oluşturma
 
@@ -246,7 +236,6 @@ print("Bu kod dosyaya yazılır, çalışmaz")
 !python myfile.py # Dosyayı çalıştırır
 ```
 
----
 
 ## `None` Nedir?
 
@@ -279,7 +268,6 @@ y = None
 print(y + 5)   # HATA! TypeError
 ```
 
----
 
 ## Sık Yapılan Hatalar ve Çözümleri
 
@@ -290,7 +278,6 @@ print(y + 5)   # HATA! TypeError
 | `TypeError: missing 1 required positional argument` | Parametre eksik gönderdin | Kaç parametre gerekiyorsa hepsini gönder |
 | `AttributeError: object has no attribute 'full_name'` | Metodu tanımlamadın veya yanlış yazdın | Metodu doğru şekilde tanımla |
 
----
 
 ## Altın Kurallar (Özet)
 
