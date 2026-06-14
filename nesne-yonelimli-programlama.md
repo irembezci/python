@@ -12,8 +12,7 @@ class Araba:
 
 benim_araba = Araba()  # Nesne oluşturma
 ```
-
-
+<br>
 ## `__init__` Metodu (Yapıcı Metot)
 
 Bir nesne oluşturulduğunda **otomatik olarak çalışan** ilk metottur. Nesnenin ilk değerlerini atamak için kullanılır.
@@ -33,8 +32,7 @@ print(ali.name)  # Çıktı: Ali
 | `self.name = name` | Gelen name değerini nesnenin name özelliğine ata |
 | `ali = User("Ali")` | "Ali" değeri __init__'e gider, self.name = "Ali" olur |
 
-
-
+<br>
 ## `self` Nedir?
 
 `self`, **o an oluşturulan nesnenin kendisidir**. Her metotun ilk parametresi `self` olmak zorundadır. `self` sayesinde nesnenin özelliklerine ve diğer metotlarına erişebiliriz.
@@ -53,8 +51,7 @@ pisi.seslen()  # Çıktı: Merhaba, ben Pisi
 
 **Önemli:** `self` parametresini çağırırken asla yazmayız. Python otomatik olarak gönderir.
 
-
-
+<br>
 ## Özellikler (Attributes) ve Metotlar (Methods)
 
 | Terim | Açıklama | Örnek |
@@ -70,8 +67,7 @@ class Dog:
     def bark(self):               # Metot
         print(f"{self.name} says woof!")
 ```
-
-
+<br>
 ## Varsayılan Parametreler (Default Parameters)
 
 Parametrelere başlangıç değeri verebilirsiniz. Kullanıcı değer vermezse varsayılan değer kullanılır.
@@ -85,8 +81,7 @@ class Dog:
 snoopy = Dog("Snoopy")        # age = 0 (varsayılan)
 rex = Dog("Rex", 5)           # age = 5
 ```
-
-
+<br>
 ## Bir Metodun Başka Bir Metodu Çağırması
 
 Bir metot, aynı sınıf içindeki başka bir metodu `self.metot_adi()` ile çağırabilir.
@@ -108,8 +103,7 @@ class Dog:
 ```
 
 `greet()` metodu, `casual_name()` metodunu çağırır ve dönen değeri kullanır.
-
-
+<br>
 ## Koşullu Mantık ile Metod Yazma (if/elif/else)
 
 Metotların içinde koşullu ifadeler kullanarak farklı durumlara göre farklı sonuçlar döndürebilirsiniz.
@@ -135,6 +129,7 @@ class User:
 | `year < 2000` | "20th" döndürür |
 | `year >= 2000` | "21st" döndürür |
 
+<br>
 
 ## Inheritance (Kalıtım / Miras Alma)
 
@@ -171,6 +166,7 @@ luis.greet()     # Çıktı: Hola! - Luis
 
 **Önemli:** Çocuk sınıf, ebeveyn sınıfın metodlarını **ezebilir (override)**. Yukarıdaki örnekte `greet()` metodu her çocuk sınıfta yeniden yazılmıştır.
 
+<br>
 
 ## Modüler Programlama ve `import`
 
@@ -220,7 +216,7 @@ from user import User   # BU SATIR ÇOK ÖNEMLİ!
 class FrenchUser(User):
     pass
 ```
-
+<br>
 
 ## Colab'de `%%writefile` ile Dosya Oluşturma
 
@@ -238,7 +234,7 @@ print("Bu kod dosyaya yazılır, çalışmaz")
 ```python
 !python myfile.py # Dosyayı çalıştırır
 ```
-
+<br>
 
 ## `None` Nedir?
 
@@ -260,7 +256,7 @@ class Weather:
         self.temperature = temperature
         self.condition = condition
 ```
-
+<br>
 **Matematiksel Fark:**
 
 ```python
@@ -270,7 +266,7 @@ print(x + 5)   # 5 çalışır
 y = None
 print(y + 5)   # HATA! TypeError
 ```
-
+<br>
 
 ## Sık Yapılan Hatalar ve Çözümleri
 
@@ -281,6 +277,7 @@ print(y + 5)   # HATA! TypeError
 | `TypeError: missing 1 required positional argument` | Parametre eksik gönderdin | Kaç parametre gerekiyorsa hepsini gönder |
 | `AttributeError: object has no attribute 'full_name'` | Metodu tanımlamadın veya yanlış yazdın | Metodu doğru şekilde tanımla |
 
+<br>
 
 ## Altın Kurallar (Özet)
 
