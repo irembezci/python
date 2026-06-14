@@ -280,6 +280,7 @@ print(user1.greet())   # Hello, my name is Alice
 print(user2.greet())   # Hello, my name is Bob
 print(user1.is_adult())  # True
 print(user2.is_adult())  # False
+```
 
 ## Ödev 2: Hayvan Sınıfı ve Miras Alma
 
